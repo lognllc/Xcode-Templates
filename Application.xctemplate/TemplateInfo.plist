@@ -39,6 +39,43 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
+		
+		<key>Classes/UIColor+Hex.h</key>
+		<dict>
+			<key>Path</key>
+			<string>UIColor+Hex.h</string>
+			<key>Group</key>
+			<string>Categories</string>
+		</dict>
+		
+		<key>Classes/UIColor+Hex.m</key>
+		<dict>
+			<key>Path</key>
+			<string>UIColor+Hex.m</string>
+			<key>Group</key>
+			<string>Categories</string>
+		</dict>
+		
+		<key>Classes/UIImage+___PACKAGENAMEASIDENTIFIER___.h</key>
+		<dict>
+			<key>Path</key>
+			<string>UIImage.h</string>
+			<key>Group</key>
+			<string>Categories</string>
+		</dict>
+		
+		<key>Classes/UIImage+___PACKAGENAMEASIDENTIFIER___.m</key>
+		<dict>
+			<key>Path</key>
+			<string>UIImage.m</string>
+			<key>Group</key>
+			<string>Categories</string>
+		</dict>
+		
+		<key>___PACKAGENAME___-Prefix.pch:objC:importCategories</key>
+		<string>#import "UIColor+Hex.h"
+#import "UIImage+___PACKAGENAMEASIDENTIFIER___.h"</string>
+
 	</dict>
 	
 	<key>Description</key>
@@ -49,9 +86,14 @@
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
+		<string>___PACKAGENAME___-Prefix.pch:objC:importCategories</string>
 		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:5</string>
 		<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:import:GetAppDelegate</string>
 		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:AFNetworkActivityIndicatorManager.h</string>
+		<string>Classes/UIColor+Hex.h</string>
+		<string>Classes/UIColor+Hex.m</string>
+		<string>Classes/UIImage+___PACKAGENAMEASIDENTIFIER___.h</string>
+		<string>Classes/UIImage+___PACKAGENAMEASIDENTIFIER___.m</string>
 	</array>
 </dict>
 </plist>
