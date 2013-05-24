@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Identifier</key>
+		<string>com.rexsheng.template.additions.AppearanceIntegration</string>
+		<key>Name</key>
+		<string>AppearanceIntegration</string>
+		<key>Ancestors</key>
+		<array>
+		</array>
+		<key>Kind</key>
+		<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+		<key>Definitions</key>
+		<dict>
+			<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:customizeAppearance</key>
+			<string>[self customizeAppearance];</string>
+			<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:customizeAppearance</key>
+			<dict>
+				<key>Beginning</key>
+				<string>- (void)customizeAppearance
+{
+	[[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+</string>
+				<key>End</key>
+				<string>
+}</string>
+				<key>Indent</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<key>Options</key>
+		<array>
+		</array>
+		<key>Nodes</key>
+		<array>
+			<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:customizeAppearance</string>
+			<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:customizeAppearance</string>
+		</array>
+		<key>SortOrder</key>
+		<integer>1</integer>
+		
+	</dict>
+</plist>

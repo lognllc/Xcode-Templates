@@ -8,6 +8,7 @@
 		<array>
 			<string>com.rexsheng.template.additions.RSMenuControllerIntegrations</string>
 			<string>com.rexsheng.template.additions.GitIntegrations</string>
+			<string>com.rexsheng.template.additions.AppearanceIntegration</string>
 		</array>
 		<key>Kind</key>
 		<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
@@ -37,7 +38,7 @@
 							<string>Classes/___VARIABLE_classPrefix:identifier___MenuViewController.m</string>
 							<string>Classes/___VARIABLE_classPrefix:identifier___LeftMenuViewController.h</string>
 							<string>Classes/___VARIABLE_classPrefix:identifier___LeftMenuViewController.m</string>
-							
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:customizeAppearance:RSMenuView</string>
 							<string>../.gitmodules:RSMenuView</string>
 						</array>
 						<key>Definitions</key>
@@ -84,6 +85,23 @@
 							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:RSMenuControllerIntegrations:LeftMenu</key>
 							<string>_leftMenu = [[___VARIABLE_classPrefix:identifier___LeftMenuViewController alloc] init];
 _menuController.leftViewControllers = @[_leftMenu];</string>
+							
+							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:customizeAppearance:RSMenuView</key>
+							<string>[[RSMenuView appearance] setRowHeight:&lt;#44#&gt;];
+[[RSMenuView appearance] setTextColor:&lt;#[UIColor hexWhite:0xA0]#&gt; forIndent:0];
+[[RSMenuView appearance] setTextFont:&lt;#[UIFont MrEavesModOTRegular:20]#&gt; forIndent:0];
+[[RSMenuCell appearance] setTextShadowColor:&lt;#[UIColor blackColor]#&gt;];
+[[RSMenuCell appearance] setSelectedBackgroundColor:&lt;#[UIColor hexWhite:0 alpha:.25]#&gt;];
+[[RSMenuView appearance] setRowBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:&lt;#@"menu-background"#&gt;]] forIndent:1];
+
+[[RSMenuView appearanceWhenContainedIn:[___VARIABLE_classPrefix:identifier___LeftMenuViewController class], nil] setRowEdgeInsets:UIEdgeInsetsMake(0, 45, 0, 5 + MENU_MARGIN)];
+
+UIImage *rule = [UIImage imageFromSize:CGSizeMake(320, 4) block:^(CGContextRef context) {
+	CGContextSetFillColorWithColor(context, &lt;#[UIColor blackColor].CGColor#&gt;);
+	CGContextSetShadowWithColor(context, &lt;#CGSizeMake(0, 1)#&gt;, 2, &lt;#[UIColor hexWhite:0xff alpha:.25].CGColor#&gt;);
+	CGContextFillRect(context, CGRectMake(0, 0, 320, 1));
+}];
+[[RSRowBackgroundView appearance] setRowSeperatorImage:rule];</string>
 						</dict>
 					</dict>
 				</dict>
