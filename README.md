@@ -10,8 +10,8 @@ This template provides a starting point for an application using
 
 1. [Download](https://github.com/lognllc/Xcode-Templates/zipball/master) or clone the repository
 2. Move into `~/Library/Developer/Xcode/Templates/LogN` directory. You may have to create the `Templates/LogN` directories.
-
 3. In Xcode, check that installation was successful by creating a New Project (⌘⇧N), and checking for the RSMenu* section under iOS.
+4. do `git submodule update --init` if necessary.
 
 ### Creators
 
