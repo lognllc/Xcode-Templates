@@ -6,7 +6,7 @@
 //___COPYRIGHT___
 //
 
-#import <UIKit/UIKit.h>
+@class RSMenuView;
 
 @interface ___VARIABLE_classPrefix:identifier___MenuViewController : UIViewController
 

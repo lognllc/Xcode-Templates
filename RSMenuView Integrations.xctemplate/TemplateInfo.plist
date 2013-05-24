@@ -7,6 +7,7 @@
 		<key>Ancestors</key>
 		<array>
 			<string>com.rexsheng.template.additions.RSMenuControllerIntegrations</string>
+			<string>com.rexsheng.template.additions.GitIntegrations</string>
 		</array>
 		<key>Kind</key>
 		<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
@@ -30,18 +31,17 @@
 						<key>Nodes</key>
 						<array>
 							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:RSMenuControllerIntegrations:LeftMenu</string>
-							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:import:leftMenu</string>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:class:___VARIABLE_classPrefix:identifier___LeftMenuViewController</string>
 							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:leftMenu</string>
 							<string>Classes/___VARIABLE_classPrefix:identifier___MenuViewControlle.h</string>
 							<string>Classes/___VARIABLE_classPrefix:identifier___MenuViewController.m</string>
 							<string>Classes/___VARIABLE_classPrefix:identifier___LeftMenuViewController.h</string>
 							<string>Classes/___VARIABLE_classPrefix:identifier___LeftMenuViewController.m</string>
+							
+							<string>../.gitmodules:RSMenuView</string>
 						</array>
 						<key>Definitions</key>
 						<dict>
-							<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:import:leftMenu</key>
-							<string>@class ___VARIABLE_classPrefix:identifier___LeftMenuViewController;
-</string>
 							<key>Classes/___VARIABLE_classPrefix:identifier___MenuViewControlle.h</key>
 							<dict>
 								<key>Path</key>
@@ -49,6 +49,10 @@
 								<key>Group</key>
 								<string>Menu</string>
 							</dict>
+							<key>../.gitmodules:RSMenuView</key>
+							<string>[submodule "RSMenuView"]
+	path = RSMenuView
+	url = git://github.com/b051/RSMenuView.git</string>
 						
 							<key>Classes/___VARIABLE_classPrefix:identifier___MenuViewController.m</key>
 							<dict>

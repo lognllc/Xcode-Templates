@@ -6,7 +6,6 @@
 //___COPYRIGHT___
 //
 
-#import <UIKit/UIKit.h>
 #import "___VARIABLE_classPrefix:identifier___MenuViewController.h"
 
 @interface ___VARIABLE_classPrefix:identifier___LeftMenuViewController : ___VARIABLE_classPrefix:identifier___MenuViewController
